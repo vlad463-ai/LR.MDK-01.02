@@ -18,6 +18,23 @@ namespace InstitutionLib
             lastName_ = lastName;
             age_ = age;
         }
-        
+        public string GetFirstName()
+        {
+            return firstName_;
+        }
+
+        public string GetLastName()
+        {
+            return lastName_;
+        }
+
+        public int GetAge()
+        {
+            return age_;
+        }
+        public string GetFullName()
+        {
+            return $"{firstName_} {lastName_}";
+        }
     }
 }

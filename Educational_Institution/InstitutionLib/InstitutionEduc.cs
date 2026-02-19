@@ -8,14 +8,10 @@ namespace InstitutionLib
 {
     public class InstitutionEduc
     {
-        private Dictionary<string, List<Student>> allGroups_ = new Dictionary<string, List<Student>>();
-
-        
-
+        public Dictionary<string, List<Student>> allGroups_ = new Dictionary<string, List<Student>>();
 
         public List<Student> studentGroupRequest(string groupName)
         {
-           
             List<Student> studentGroup = new List<Student>();
             foreach (string group in allGroups_.Keys)
             {
