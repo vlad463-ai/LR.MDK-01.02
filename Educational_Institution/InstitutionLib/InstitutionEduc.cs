@@ -10,7 +10,7 @@ namespace InstitutionLib
     {
         public Dictionary<string, List<Student>> allGroups_ = new Dictionary<string, List<Student>>();
 
-        public List<Student> studentGroupRequest(string groupName)
+        public List<Student> StudentGroupRequest(string groupName)
         {
             List<Student> studentGroup = new List<Student>();
             foreach (string group in allGroups_.Keys)

@@ -8,31 +8,22 @@ namespace InstitutionLib
 {
     public class Student
     {
-        private string firstName_;
-        private string lastName_;
-        private int age_;
+       
 
         public Student(string firstName, string lastName, int age)
         {
-            firstName_ = firstName;
-            lastName_ = lastName;
-            age_ = age;
+            FirstName = firstName;
+            LastName = lastName;
+            Age = age;
         }
-        public string FirstName
-        {
-            get { return firstName_; }
-        }
-        public string LastName
-        {
-            get { return lastName_; }
-        }
-        public int Age
-        {
-            get { return age_; }
-        }
+        public string FirstName {  get ; set; }
+        public string LastName { get; set; }
+        public int Age { get; set; }
+
+        
         public string GetFullName()
         {
-            return $"{firstName_} {lastName_}";
+            return $"{FirstName} {LastName}";
         }
     }
 }
