@@ -13,14 +13,21 @@ namespace InstitutionLib
         public List<Student> StudentGroupRequest(string groupName)
         {
             List<Student> studentGroup = new List<Student>();
-            foreach (string group in allGroups_.Keys)
+            if (allGroups_.ContainsKey(groupName))
             {
-                if (group == groupName)
-                {
-                    studentGroup = allGroups_[group];
-                }
+                studentGroup = allGroups_[groupName];
+                return studentGroup;
             }
-            return studentGroup;
-        }
+            else
+            {
+                return null;
+            }
+               
+               
+            
+            
+            
+        }   
+
     }
 }
