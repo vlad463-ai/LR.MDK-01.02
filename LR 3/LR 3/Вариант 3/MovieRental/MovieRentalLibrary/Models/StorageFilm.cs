@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace MovieRental
 {
-    internal class StorageFilm : IFilm
+    public class StorageFilm : IFilm
     {
         public List<CharacteristicsFilms> Film()
         {
@@ -34,7 +34,5 @@ namespace MovieRental
 
 
         }
-
-
     }
 }

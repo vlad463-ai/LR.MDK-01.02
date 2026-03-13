@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MovieRental
 {
-    internal interface IFilm
+    public interface IFilm
     {
         List<CharacteristicsFilms> Film();
 

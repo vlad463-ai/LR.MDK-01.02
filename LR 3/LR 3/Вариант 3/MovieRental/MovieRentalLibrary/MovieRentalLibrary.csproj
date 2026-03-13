@@ -43,15 +43,10 @@
   <ItemGroup>
     <Compile Include="Class1.cs" />
     <Compile Include="Models\CharacteristicsFilms.cs" />
-    <Compile Include="Models\IFilm.cs" />
     <Compile Include="Models\StorageFilm.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="View\IFilm.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\MovieRental\MovieRental.csproj">
-      <Project>{5e2b022f-9c51-4b65-9306-c9cbd43c2214}</Project>
-      <Name>MovieRental</Name>
-    </ProjectReference>
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

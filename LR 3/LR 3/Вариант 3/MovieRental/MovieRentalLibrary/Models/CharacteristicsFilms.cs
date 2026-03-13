@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MovieRental
 {
-    internal class CharacteristicsFilms
+    public class CharacteristicsFilms
     {
         private string name_;
         private string director_;
