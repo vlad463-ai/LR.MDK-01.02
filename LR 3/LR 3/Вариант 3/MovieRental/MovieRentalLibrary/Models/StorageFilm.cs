@@ -12,7 +12,7 @@ namespace MovieRental
         public List<CharacteristicsFilms> Film()
         {
             List<CharacteristicsFilms> allMovie = new List<CharacteristicsFilms>();
-            string path = @"D:\01.01\LR 3\Фильмы\data.csv";
+            string path = @"C:\LR3Test\LR 3\LR 3\Фильмы\data.csv";
             StreamReader info = new StreamReader(path);
             string line;
             while ((line = info.ReadLine()) != null)
