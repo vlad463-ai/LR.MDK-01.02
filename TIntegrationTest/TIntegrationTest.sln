@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35818.85 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TIntegrationTest", "TIntegrationTest\TIntegrationTest.csproj", "{75745E55-C0F1-4FF9-9D17-8CB4BD555482}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestLib", "TestLib\TestLib.csproj", "{8CF35A96-681D-41F2-A2D7-8333A275C997}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{75745E55-C0F1-4FF9-9D17-8CB4BD555482}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75745E55-C0F1-4FF9-9D17-8CB4BD555482}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75745E55-C0F1-4FF9-9D17-8CB4BD555482}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75745E55-C0F1-4FF9-9D17-8CB4BD555482}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8CF35A96-681D-41F2-A2D7-8333A275C997}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CF35A96-681D-41F2-A2D7-8333A275C997}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CF35A96-681D-41F2-A2D7-8333A275C997}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CF35A96-681D-41F2-A2D7-8333A275C997}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A90AFF79-FB2A-45F0-8CFD-AB87192F98DA}
+	EndGlobalSection
+EndGlobal
