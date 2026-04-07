@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using TestLib;
 
@@ -8,6 +9,7 @@ namespace TIntegrationTest
     [TestClass]
     public class TestProduct
     {
+        
         [TestMethod]
         public void TestReadAllFromFile()
         {
@@ -22,11 +24,20 @@ namespace TIntegrationTest
                   new Product{Name ="Бабан", Price = 100,Count =  10 }
             };
             Assert.AreEqual(expected.Count, actual.Count);
-            Assert.AreEqual(expected[0].Name, actual[0].Name);
-            Assert.AreEqual(expected[0].Price, actual[0].Price);
-            Assert.AreEqual(expected[0].Count, actual[0].Count);
+            for(int i =0; i<expected.Count;i++)
+            {
+                Assert.AreEqual(expected[i].Name, actual[i].Name);
+                Assert.AreEqual(expected[i].Price, actual[i].Price);
+                Assert.AreEqual(expected[i].Count, actual[i].Count);
+            }
+            
 
 
+        }
+        [TestMethod]
+        public void TestSellsAnalyzes()
+        {
+            SellsAnalyzes.countProducts();
         }
     }
 }
