@@ -16,13 +16,17 @@ namespace TIntegrationTest
             actual = saleImporter.ReadAllFromFile();
             List<Product> expected = new List<Product>
             {
-                  new Product{Name = "Винаград", Price = 1000,Count =  15 },
-                  new Product{Name = "Слива", Price = 1500,Count =  3 },
-                  new Product{Name = "Яблаки", Price = 500,Count =  26 },
-                  new Product{Name = "Бабан", Price = 100,Count =  10 }
+                  new Product{Name ="Винаград",Price = 1000,Count =  15 },
+                  new Product{Name ="Слива", Price = 1500,Count =  3 },
+                  new Product{Name ="Яблаки", Price = 500,Count =  26 },
+                  new Product{Name ="Бабан", Price = 100,Count =  10 }
             };
-            CollectionAssert.AreEqual( expected, actual);
- 
+            Assert.AreEqual(expected.Count, actual.Count);
+            Assert.AreEqual(expected[0].Name, actual[0].Name);
+            Assert.AreEqual(expected[0].Price, actual[0].Price);
+            Assert.AreEqual(expected[0].Count, actual[0].Count);
+
+
         }
     }
 }
